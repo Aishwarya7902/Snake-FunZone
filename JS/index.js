@@ -1,3 +1,14 @@
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+  canvas.width = canvas.clientWidth;
+  canvas.height = canvas.clientHeight;
+}
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); // Initial resize
+
 //game constants and variables
 let inputDir={x:0, y:0};
 const foodSound=new Audio('food.mp3');
