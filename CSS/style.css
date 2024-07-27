@@ -86,3 +86,28 @@
     border: 0.25vmin solid black;
     border-radius: 8px;
 }
+
+/* Make canvas responsive */
+canvas {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+/* Container for the game */
+#gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
